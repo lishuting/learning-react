@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+
+<script>
+  var topic = "JavaScript";
+  if (topic) {
+    var topic = "React";
+    console.log('Block', topic);
+  }
+
+  console.log('global', topic);
+</script>
+
+<script>
+  var topic = "JavaScript";
+  if (topic) {
+    let topic = "React";
+    console.log('Block', topic);
+  }
+
+  console.log('global', topic);
+</script>
+
+</body>
+</html>
