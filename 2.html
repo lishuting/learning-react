@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    #container > div {
+      width: 20%;
+      height: 200px;
+      float: left;
+    }
+    #container > div:nth-child(even) {
+      background: #4183c4;
+    }
+    #container > div:nth-child(odd) {
+      background: #f6bf29;
+    }
+  </style>
+</head>
+<body>
+
+<div id="container"></div>
+
+<!--
+<script>
+  var div,
+    container = document.getElementById('container');
+
+  for (var i=0; i<5; i++) {
+    div = document.createElement('div');
+    div.onclick = function () {
+      alert('This is box #' + i);
+    }
+    container.appendChild(div);
+  }
+</script>
+-->
+
+<script>
+  var div,
+    container = document.getElementById('container');
+
+  for (let i=0; i<5; i++) {
+    div = document.createElement('div');
+    div.onclick = function () {
+      alert('This is box #' + i);
+    }
+    container.appendChild(div);
+  }
+</script>
+
+</body>
+</html>
